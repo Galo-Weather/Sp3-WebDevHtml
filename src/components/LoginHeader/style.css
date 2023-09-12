@@ -1,0 +1,13 @@
+.loginHead {
+    position: absolute;
+    bottom: 0;
+    text-align: start;
+    padding: 0.5em;
+}
+
+.loginHead a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 1.3rem;
+}

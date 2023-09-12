@@ -1,0 +1,12 @@
+.sideBurguer{
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    top: 2%;
+    left: 5%;
+}
+.sideBurguer img{
+    width: 41.17px;
+    cursor: pointer;
+}

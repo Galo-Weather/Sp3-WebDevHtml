@@ -1,0 +1,8 @@
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-img{
+    margin: auto auto auto 2em;
+    width: 10em;
+}
