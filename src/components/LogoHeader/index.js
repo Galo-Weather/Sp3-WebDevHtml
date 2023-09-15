@@ -1,16 +1,24 @@
-import './style.css'
+import styled from 'styled-components';
 import logo from '../../imgs/galoBanner.png'
+
+const LogoSideBar = styled.div`
+display: flex;
+justify-content: space-between;
+`
+const LogoSideBarimg = styled.img`
+    margin: auto auto auto 2em;
+    width: 10em;
+`
 
 function LogoHeader() {
     return (
-        <div className='logo'>
-            
-            <img
+        <LogoSideBar>
+            <LogoSideBarimg
                 src={logo}
                 alt='logo'
                 className='logo-img'
-            ></img>
-        </div>
+            ></LogoSideBarimg>
+        </LogoSideBar>
     );
 }
 
