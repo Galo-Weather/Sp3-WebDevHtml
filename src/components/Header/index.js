@@ -3,6 +3,7 @@ import React from 'react';
 import hamburguer from '../../imgs/burguer.png'
 import logo from '../../imgs/galoBanner.png'
 import { useState } from "react";
+import { Link as ScrollLink, Element} from "react-scroll"
 
 const Head = styled.header`
     position: fixed;
@@ -34,7 +35,7 @@ const Head = styled.header`
     }
 `
 const Burguer = styled.div`
-    position: absolute;
+    position: fixed;
     width: 0;
     height: 0;
     z-index: 100;
@@ -140,13 +141,66 @@ function Header() {
                 </LogoHeader>
                 <Nav>
                     <NavHeader>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#problema">Problema</a></li>
-                        <li><a href="#causas">Causas</a></li>
-                        <li><a href="#impactos">Impactos</a></li>
-                        <li><a href="#solucao">Solução</a></li>
-                        <li><a href="#quem-somos">Quem somos</a></li>
-                        <li><a href="#equipe">Equipe</a></li>
+                        <li>
+                            <ScrollLink
+                            activeClass="active"
+                            to="MainPage"
+                            spy={true}
+                            offset={-50}
+                            duration={500}>
+                            <a>Home</a>
+                            </ScrollLink>
+                        </li>
+                        <li>
+                            <ScrollLink
+                            activeClass="active"
+                            to="Problema"
+                            spy={true}
+                            offset={-50}
+                            duration={500}>
+                            <a href="problema">Problema</a>
+                            </ScrollLink>
+                        </li>
+                        <li>
+                            <ScrollLink
+                            activeClass="active"
+                            to="Causa"
+                            spy={true}
+                            offset={-50}
+                            duration={500}>
+                            <a href="#causas">Causas</a>
+                            </ScrollLink>
+                        </li>
+                        <li>
+                            <ScrollLink
+                            activeClass="active"
+                            to="Solucao"
+                            spy={true}
+                            offset={-50}
+                            duration={500}>
+                            <a href="#quem-somos">Solução</a>
+                            </ScrollLink>
+                        </li>
+                        <li>
+                            <ScrollLink
+                            activeClass="active"
+                            to="Contato"
+                            spy={true}
+                            offset={-50}
+                            duration={500}>
+                            <a href="#equipe">Sobre Nós</a>
+                            </ScrollLink>
+                        </li>
+                        <li>
+                            <ScrollLink
+                            activeClass="active"
+                            to="Contato"
+                            spy={true}
+                            offset={-50}
+                            duration={500}>
+                            <a href="#equipe">Contato</a>
+                            </ScrollLink>
+                        </li>
                     </NavHeader>
                 </Nav>
                 <LoginHeader>

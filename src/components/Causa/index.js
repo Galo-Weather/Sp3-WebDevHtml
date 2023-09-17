@@ -3,6 +3,7 @@ import React from 'react';
 import Chuvas from '../../imgs/Chuvas-intensas.png';
 import Drenagem from '../../imgs/Deficiencia-de-drenagem.png';
 import Urbanizacao from '../../imgs/Urbanizacao.png';
+import { Element } from "react-scroll";
 
 const CausaContainer = styled.section`
     width: auto;
@@ -57,62 +58,64 @@ const Face2Content = styled.div`
 function Causa() {
 
     return (
-        <CausaContainer>
-            <h1>Principais causas</h1>
-            <CausaContent>
-                <Card>
-                    <Face1>
-                        <Face1Content>
-                            <img
-                                src={Chuvas}
-                                alt="Chuva intensa"></img>
-                            <h3>Chuvas intensas</h3>
-                        </Face1Content>
-                    </Face1>
-                    <Face2>
-                        <Face2Content>
-                            <p>O clima tropical em que está situada São Paulo sofre com frequência de chuvas intensas,
-                                que podem resultar em deslizamentos e inundações, principalmente em regiões com drenagem
-                                inadequada.</p>
-                        </Face2Content>
-                    </Face2>
-                </Card>
-                <Card>
-                    <Face1>
-                        <Face1Content>
-                            <img
-                                src={Drenagem}
-                                alt="Chuva intensa"></img>
-                            <h3>Deficiencia de drenagem</h3>
-                        </Face1Content>
-                    </Face1>
-                    <Face2>
-                        <Face2Content>
-                            <p>Sistemas de drenagem insuficientes em São Paulo também podem causar inundações, pois a
-                                água da chuva pode se acumular em regiões baixas e ruas sem saídas ou canais adequados
-                                para direcionar a água para longe das áreas populosas.</p>
-                        </Face2Content>
-                    </Face2>
-                </Card>
-                <Card>
-                    <Face1>
-                        <Face1Content>
-                            <img
-                                src={Urbanizacao}
-                                alt="Chuva intensa"></img>
-                            <h3>Urbanização</h3>
-                        </Face1Content>
-                    </Face1>
-                    <Face2>
-                        <Face2Content>
-                            <p>Prédios, estradas e outras infraestruturas foram construídas sobre solo natural nos
-                                distritos metropolitanos de São Paulo como resultado da rápida urbanização da cidade,
-                                que diminuiu a capacidade do solo de absorver água e aumentou o escoamento.</p>
-                        </Face2Content>
-                    </Face2>
-                </Card>
-            </CausaContent>
-        </CausaContainer>
+        <Element name="Causa">
+            <CausaContainer>
+                <h1>Principais causas</h1>
+                <CausaContent>
+                    <Card>
+                        <Face1>
+                            <Face1Content>
+                                <img
+                                    src={Chuvas}
+                                    alt="Chuva intensa"></img>
+                                <h3>Chuvas intensas</h3>
+                            </Face1Content>
+                        </Face1>
+                        <Face2>
+                            <Face2Content>
+                                <p>O clima tropical em que está situada São Paulo sofre com frequência de chuvas intensas,
+                                    que podem resultar em deslizamentos e inundações, principalmente em regiões com drenagem
+                                    inadequada.</p>
+                            </Face2Content>
+                        </Face2>
+                    </Card>
+                    <Card>
+                        <Face1>
+                            <Face1Content>
+                                <img
+                                    src={Drenagem}
+                                    alt="Chuva intensa"></img>
+                                <h3>Deficiencia de drenagem</h3>
+                            </Face1Content>
+                        </Face1>
+                        <Face2>
+                            <Face2Content>
+                                <p>Sistemas de drenagem insuficientes em São Paulo também podem causar inundações, pois a
+                                    água da chuva pode se acumular em regiões baixas e ruas sem saídas ou canais adequados
+                                    para direcionar a água para longe das áreas populosas.</p>
+                            </Face2Content>
+                        </Face2>
+                    </Card>
+                    <Card>
+                        <Face1>
+                            <Face1Content>
+                                <img
+                                    src={Urbanizacao}
+                                    alt="Chuva intensa"></img>
+                                <h3>Urbanização</h3>
+                            </Face1Content>
+                        </Face1>
+                        <Face2>
+                            <Face2Content>
+                                <p>Prédios, estradas e outras infraestruturas foram construídas sobre solo natural nos
+                                    distritos metropolitanos de São Paulo como resultado da rápida urbanização da cidade,
+                                    que diminuiu a capacidade do solo de absorver água e aumentou o escoamento.</p>
+                            </Face2Content>
+                        </Face2>
+                    </Card>
+                </CausaContent>
+            </CausaContainer>
+        </Element>
     );
 }
 

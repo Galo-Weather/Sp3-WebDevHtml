@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import React from 'react';
-import Esp32 from '../../imgs/Chuvas-intensas.png';
-import Window from '../../imgs/Chuvas-intensas.png';
+import Esp32 from '../../imgs/Esp32.png';
+import Ultrassonic from '../../imgs/Ultrassonic_sensor.png';
 import Circuit from '../../imgs/Circuit_Sketch.png';
 import logo from '../../imgs/galoBanner.png'
+import { Element } from "react-scroll";
 
 const SolucaoContainer = styled.section`
     width: auto;
@@ -16,6 +17,14 @@ const SolucaoContainer = styled.section`
         text-align: center;
         color: #0f62fe;
         font-weight: bold;
+    }
+
+    @media (min-width: 1100px) {
+        padding: 2em 0 em 0;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 25% auto;
     }
 `
 const SolucaoContent = styled.div`
@@ -77,67 +86,69 @@ p{
 function Solucao() {
 
     return (
-        <SolucaoContainer>
-            <h1>Solução</h1>
-            <SolucaoContent>
-                <Card>
-                    <Face1>
-                        <Face1Content>
-                            <img
-                                src={Esp32}
-                                alt="Esp32"></img>
-                            <h3>Hardware</h3>
-                        </Face1Content>
-                    </Face1>
-                    <Face2>
-                        <Face2Content>
-                            <p>O clima tropical em que está situada São Paulo sofre com frequência de chuvas intensas,
-                                que podem resultar em deslizamentos e inundações, principalmente em regiões com drenagem
-                                inadequada.</p>
-                        </Face2Content>
-                    </Face2>
-                </Card>
-                <Card>
-                    <Face1>
-                        <Face1Content>
-                            <img
-                                src={Window}
-                                alt="Chuva intensa"></img>
-                            <h3>Software</h3>
-                        </Face1Content>
-                    </Face1>
-                    <Face2>
-                        <Face2Content>
-                            <p>Sistemas de drenagem insuficientes em São Paulo também podem causar inundações, pois a
-                                água da chuva pode se acumular em regiões baixas e ruas sem saídas ou canais adequados
-                                para direcionar a água para longe das áreas populosas.</p>
-                        </Face2Content>
-                    </Face2>
-                </Card>
-                <SolucaoImg>
+        <Element name="Solucao">
+            <SolucaoContainer>
+                <h1>Solução</h1>
+                <SolucaoContent>
+                    <Card>
+                        <Face1>
+                            <Face1Content>
+                                <img
+                                    src={Ultrassonic}
+                                    alt="Esp32"></img>
+                                <h3>Hardware</h3>
+                            </Face1Content>
+                        </Face1>
+                        <Face2>
+                            <Face2Content>
+                                <p>O clima tropical em que está situada São Paulo sofre com frequência de chuvas intensas,
+                                    que podem resultar em deslizamentos e inundações, principalmente em regiões com drenagem
+                                    inadequada.</p>
+                            </Face2Content>
+                        </Face2>
+                    </Card>
+                    <Card>
+                        <Face1>
+                            <Face1Content>
+                                <img
+                                    src={Esp32}
+                                    alt="Chuva intensa"></img>
+                                <h3>Software</h3>
+                            </Face1Content>
+                        </Face1>
+                        <Face2>
+                            <Face2Content>
+                                <p>Sistemas de drenagem insuficientes em São Paulo também podem causar inundações, pois a
+                                    água da chuva pode se acumular em regiões baixas e ruas sem saídas ou canais adequados
+                                    para direcionar a água para longe das áreas populosas.</p>
+                            </Face2Content>
+                        </Face2>
+                    </Card>
+                    <SolucaoImg>
+                        <img
+                            src={Circuit}
+                            alt="Esp32 tinkercad"></img>
+                    </SolucaoImg>
+                </SolucaoContent>
+                <SolucaoContent2>
                     <img
-                        src={Circuit}
-                        alt="Esp32 tinkercad"></img>
-                </SolucaoImg>
-            </SolucaoContent>
-            <SolucaoContent2>
-                <img
-                    src={logo}
-                    alt='logo'
-                    className='logo-img'
-                ></img>
-                <p>Apresentamos com entusiasmo o projeto "Galo Weather", uma solução inovadora para os desafios dos alagamentos urbanos. 
-                    Inspirados pelo icônico galo, símbolo tradicionalmente associado à previsão do tempo, desenvolvemos um software poderoso
-                     e uma plataforma integrada que transformam nossa abordagem às alagamentos. Essa solução tecnológica combina dados 
-                     meteorológicos em tempo real, análise avançada e modelos precisos, permitindo a antecipação e ações preventivas
-                      diante das enchentes.</p>
-                <p>Além disso, avançamos no desenvolvimento de um protótipo de hardware usando ESP32 e sensor ultrassônico. 
-                    Essa integração promissora amplia nossa capacidade de coleta e análise de dados, fortalecendo ainda mais nossa 
-                    abordagem proativa para mitigar os riscos de alagamento e promover cidades mais seguras e resilientes. Este hardware 
-                    inovador é um passo crucial para aprimorar a eficácia de nossas soluções, fornecendo informações valiosas em tempo 
-                    real e contribuindo para a segurança de comunidades em áreas propensas a alagamentos.</p>
-            </SolucaoContent2>
-        </SolucaoContainer>
+                        src={logo}
+                        alt='logo'
+                        className='logo-img'
+                    ></img>
+                    <p>Apresentamos com entusiasmo o projeto "Galo Weather", uma solução inovadora para os desafios dos alagamentos urbanos. 
+                        Inspirados pelo icônico galo, símbolo tradicionalmente associado à previsão do tempo, desenvolvemos um software poderoso
+                        e uma plataforma integrada que transformam nossa abordagem às alagamentos. Essa solução tecnológica combina dados 
+                        meteorológicos em tempo real, análise avançada e modelos precisos, permitindo a antecipação e ações preventivas
+                        diante das enchentes.</p>
+                    <p>Além disso, avançamos no desenvolvimento de um protótipo de hardware usando ESP32 e sensor ultrassônico. 
+                        Essa integração promissora amplia nossa capacidade de coleta e análise de dados, fortalecendo ainda mais nossa 
+                        abordagem proativa para mitigar os riscos de alagamento e promover cidades mais seguras e resilientes. Este hardware 
+                        inovador é um passo crucial para aprimorar a eficácia de nossas soluções, fornecendo informações valiosas em tempo 
+                        real e contribuindo para a segurança de comunidades em áreas propensas a alagamentos.</p>
+                </SolucaoContent2>
+            </SolucaoContainer>
+        </Element>
     );
 }
 
