@@ -2,12 +2,13 @@ import styled from "styled-components";
 import React from 'react';
 import hamburguer from '../../imgs/burguer.png'
 import logo from '../../imgs/galoBanner.png'
+import { useState } from "react";
 
 const Head = styled.header`
     position: fixed;
     z-index: 50;
     top: 0;
-    left: 0;
+    left: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
     height: 100%;
     padding: 1em 2em 0;
     display: flex;
@@ -15,9 +16,8 @@ const Head = styled.header`
     justify-content: start;
     background: white;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
-    transition-property: visibility;
+    transition-property: left; // A transição será baseada na propriedade 'left'
     transition-duration: 0.5s;
-    visibility: visible;
 
     @media (min-width: 1100px) {
           translate: 0 0;
@@ -113,36 +113,45 @@ const LoginAnchor = styled.a`
 `
 
 function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
-        <Head>
+        <div>
             <Burguer>
                 <Hamburguer
                     src={hamburguer}
-                    alt='burguer'></Hamburguer>
+                    alt='burguer'
+                    onClick={toggleMenu}></Hamburguer>
             </Burguer>
-            <LogoHeader>
-                <LogoSideBarimg
-                    src={logo}
-                    alt='logo'
-                    className='logo-img'
-                ></LogoSideBarimg>
-            </LogoHeader>
-            <Nav>
-                <NavHeader>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#problema">Problema</a></li>
-                    <li><a href="#causas">Causas</a></li>
-                    <li><a href="#impactos">Impactos</a></li>
-                    <li><a href="#solucao">Solução</a></li>
-                    <li><a href="#quem-somos">Quem somos</a></li>
-                    <li><a href="#equipe">Equipe</a></li>
-                </NavHeader>
-            </Nav>
-            <LoginHeader>
-                <UnderlineLogin></UnderlineLogin>
-                <LoginAnchor id="loginNav" href="./login.html">Login</LoginAnchor>
-            </LoginHeader>
-        </Head>
+            <Head isOpen={menuOpen}>
+                <LogoHeader>
+                    <LogoSideBarimg
+                        src={logo}
+                        alt='logo'
+                        className='logo-img'
+                    ></LogoSideBarimg>
+                </LogoHeader>
+                <Nav>
+                    <NavHeader>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#problema">Problema</a></li>
+                        <li><a href="#causas">Causas</a></li>
+                        <li><a href="#impactos">Impactos</a></li>
+                        <li><a href="#solucao">Solução</a></li>
+                        <li><a href="#quem-somos">Quem somos</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                    </NavHeader>
+                </Nav>
+                <LoginHeader>
+                    <UnderlineLogin></UnderlineLogin>
+                    <LoginAnchor id="loginNav" href="./login.html">Login</LoginAnchor>
+                </LoginHeader>
+            </Head>
+        </div>
     );
 }
 
