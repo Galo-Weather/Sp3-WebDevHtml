@@ -44,29 +44,18 @@ function Problema() {
                         alt="inundação"></img>
                 </ProblemaImg>
                 <ProblemaTxT>
-                    <p>O Problema: Alagamentos em Centros Urbanos</p>
-                    <p>Em São Paulo, as enchentes são um problema recorrente, principalmente na época do ano em que
-                        chove muito. O rápido crescimento urbano, a falta de espaços verdes e solo permeável, a
-                        obstrução de córregos e rios por lixo e outros resíduos e outros problemas tornam a cidade
-                        vulnerável a inundações.</p>
-                    <p>Muitas vezes, a infraestrutura da cidade não aguenta as fortes chuvas, o que causa alagamentos de
-                        ruas, avenidas e residências, além de outros prejuízos econômicos e sociais.</p>
-                    <p>A implantação de políticas públicas de gestão hídrica, a criação de parques lineares para
-                        contenção de enchentes, a desobstrução e recuperação de rios e córregos, a construção de
-                        reservatórios de água e a educação da população sobre a importância de preservar os espaços
-                        verdes e evitar o descarte de lixo em locais inadequados são apenas algumas das medidas
-                        sugeridas para combater as enchentes em São Paulo.</p>
-                    <p>A falta de planejamento urbano adequado, que muitas vezes permite a construção de imóveis em
-                        locais de risco, como encostas e margens de rios, é outro problema que agrava as enchentes em
-                        São Paulo.</p>
-                    <p>Além disso, a maior impermeabilização do solo decorrente do intenso processo de urbanização de
-                        São Paulo dificulta a absorção da água da chuva pelo solo e contribui para o acúmulo de água nas
-                        ruas e avenidas.</p>
-                    <p>Para abordar essas questões, vários atores sociais, incluindo governos, empresas, organizações da
-                        sociedade civil e indivíduos devem trabalhar juntos. Para diminuir os efeitos das enchentes em
-                        São Paulo e garantir um futuro mais resiliente e seguro para a cidade e seus moradores,
-                        políticas governamentais que promovam o desenvolvimento sustentável, planejamento urbano
-                        adequado e gestão responsável da água devem ser implementadas.</p>
+                    <p>Enchentes em São Paulo: Um Desafio Complexo</p>
+                    <p>São Paulo enfrenta enchentes frequentes, especialmente durante os períodos de chuvas intensas. 
+                        A rápida expansão urbana, falta de áreas permeáveis, obstrução de córregos e infraestrutura insuficiente 
+                        tornam a cidade altamente vulnerável.</p>
+                    <p>A infraestrutura muitas vezes não suporta o volume de chuvas, resultando em alagamentos e sérios prejuízos econômicos e sociais.
+                         As soluções incluem gestão hídrica eficiente, criação de parques lineares, revitalização de rios, conscientização sobre 
+                         descarte adequado de lixo e um planejamento urbano mais sensato.</p>
+                    <p>A falta de planejamento também leva à construção em áreas de risco, agravando a situação. Além disso, a intensa urbanização leva à 
+                        impermeabilização do solo, dificultando a absorção da água e contribuindo para o acúmulo nas ruas.</p>
+                    <p>É vital uma colaboração efetiva entre governos, empresas e a comunidade. Políticas sustentáveis e a gestão responsável da água são essenciais para garantir um 
+                        futuro seguro e resiliente para a cidade e seus habitantes.</p>
+                    
                 </ProblemaTxT>
             </Container>
         </ProblemaContainer>

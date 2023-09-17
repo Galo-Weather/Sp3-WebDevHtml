@@ -126,14 +126,16 @@ function Solucao() {
                     alt='logo'
                     className='logo-img'
                 ></img>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur et nisl sit amet nibh ullamcorper scelerisque eu id ante.
-                    Integer maximus ligula mauris, vel lacinia quam aliquet et. Cras et eleifend elit. Nam volutpat, dolor in pellentesque ullamcorper,
-                    ligula libero porta tellus, ac finibus est ligula eget eros. Integer sit amet hendrerit tortor. In hac habitasse platea dictumst.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur et nisl sit amet nibh ullamcorper scelerisque eu id ante.
-                    Integer maximus ligula mauris, vel lacinia quam aliquet et. Cras et eleifend elit. Nam volutpat, dolor in pellentesque ullamcorper,
-                    ligula libero porta tellus, ac finibus est ligula eget eros. Integer sit amet hendrerit tortor. In hac habitasse platea dictumst.</p>
+                <p>Apresentamos com entusiasmo o projeto "Galo Weather", uma solução inovadora para os desafios dos alagamentos urbanos. 
+                    Inspirados pelo icônico galo, símbolo tradicionalmente associado à previsão do tempo, desenvolvemos um software poderoso
+                     e uma plataforma integrada que transformam nossa abordagem às alagamentos. Essa solução tecnológica combina dados 
+                     meteorológicos em tempo real, análise avançada e modelos precisos, permitindo a antecipação e ações preventivas
+                      diante das enchentes.</p>
+                <p>Além disso, avançamos no desenvolvimento de um protótipo de hardware usando ESP32 e sensor ultrassônico. 
+                    Essa integração promissora amplia nossa capacidade de coleta e análise de dados, fortalecendo ainda mais nossa 
+                    abordagem proativa para mitigar os riscos de alagamento e promover cidades mais seguras e resilientes. Este hardware 
+                    inovador é um passo crucial para aprimorar a eficácia de nossas soluções, fornecendo informações valiosas em tempo 
+                    real e contribuindo para a segurança de comunidades em áreas propensas a alagamentos.</p>
             </SolucaoContent2>
         </SolucaoContainer>
     );
