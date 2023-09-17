@@ -16,7 +16,7 @@ const Head = styled.header`
     justify-content: start;
     background: white;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
-    transition-property: left; // A transição será baseada na propriedade 'left'
+    transition-property: left;
     transition-duration: 0.5s;
 
     @media (min-width: 1100px) {
@@ -25,6 +25,9 @@ const Head = styled.header`
           align-items: center;
           justify-content: space-between;
           width: 100%;
+          left: 0;
+          transition-property: left;
+          transition-duration: 0s;
           height: 5.5em;
           padding: 1em;
           visibility: visible;
