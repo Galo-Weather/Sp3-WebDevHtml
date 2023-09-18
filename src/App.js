@@ -27,7 +27,7 @@ function App() {
         <Problema/>
         <Causa/>
         <Solucao/>
-        {/* <AboutUs/> */}
+        <AboutUs/>
         <Contato/>
     </div>
   );
