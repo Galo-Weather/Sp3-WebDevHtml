@@ -31,7 +31,7 @@ const ProblemaImg = styled.figure`
         grid-column: 1;
 
         img{
-            max-width: none;
+            max-width: 100%;
         }
     }
 `

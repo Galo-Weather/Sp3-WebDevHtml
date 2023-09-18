@@ -19,6 +19,11 @@ const CausaContainer = styled.section`
     }
 `
 const CausaContent = styled.div`
+
+@media (min-width: 1100px) {
+    display: flex;
+    padding: 1em;
+}
 `
 const Card = styled.div`
     position: relative;
@@ -33,11 +38,21 @@ const Card = styled.div`
         max-width: 6.25em;
         margin: auto;
     }
+
+    @media (min-width: 1100px) {
+        background: transparent;
+        box-shadow: none;
+        padding: 1em;
+        height: 100%;
+        margin: 0;
+    }
+
 `
 const Face1 = styled.div`
     padding: 1em;
     background: #f4f4f4;
     border-radius: 1em 1em 0 0;
+    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
 
 `
 const Face1Content = styled.div`
@@ -45,14 +60,27 @@ const Face1Content = styled.div`
     margin-top: 0.5em;
     color: #0f62fe;
  }
+ @media (min-width: 1100px) {
+    h3{
+        margin-top: 0;
+     }
+}
 `
 const Face2 = styled.div`
     padding: 1em;
     background: #fff;
     border-radius: 0 0 1em 1em;
+    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
 `
 const Face2Content = styled.div`
  padding: 1em;
+
+ @media (min-width: 1100px) {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+}
 `
 
 function Causa() {
