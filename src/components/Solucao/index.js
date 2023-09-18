@@ -7,6 +7,7 @@ import logo from '../../imgs/galoBanner.png'
 import { Element } from "react-scroll";
 
 const SolucaoContainer = styled.section`
+    background: linear-gradient(#ffffff, #e8e8e8 15%);
     width: auto;
     padding: 1em;
     h1{

@@ -5,7 +5,7 @@ import WppIcon from "../../imgs/icons/whatsapp-icon.png";
 import EmailIcon from "../../imgs/icons/email-icon.png";
 
 const ContatoContainer = styled.section`
-background: linear-gradient(#e8e8e8, #ffffff 15%);
+background: linear-gradient(#ffffff, #e8e8e8 15%);
 align-items: center;
 padding: 1em;
 

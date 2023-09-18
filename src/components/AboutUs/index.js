@@ -10,7 +10,15 @@ import Vinicius from '../../imgs/time/Vinicius.png'
 
 
 const AboutContainer = styled.section`
-  display: flex;
+background: linear-gradient(#e8e8e8, #ffffff 15%);
+  text-align: center;
+  padding: 1em;
+  h1{
+    margin-bottom: 1em;
+  }
+
+  @media (min-width: 1100px) {
+    display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -18,22 +26,36 @@ const AboutContainer = styled.section`
   h1{
     margin-bottom: 1em;
   }
+}
 `;
 
 const Container = styled.div`
-  display: flex;
+
+  padding: 1em;
+  border-radius: 30px;
+  box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
+  
+
+  @media (min-width: 1100px) {
+    display: flex;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
 `;
 
 const AboutImg = styled.div`
-  margin-right: 20px;
+img{
+    width: 100%;
+    padding: 1em;
+}
 `;
 
 const AboutTxT = styled.div`
   max-width: 600px;
+  padding-top: 1em;
 `;
 
 const CardContainer = styled.div`

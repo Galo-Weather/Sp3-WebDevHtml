@@ -5,30 +5,19 @@ import Causa from './components/Causa';
 import Solucao from './components/Solucao';
 import AboutUs from './components/AboutUs';
 import Contato from './components/Contato';
-import Login from './components/Login';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-        <Header>
-        <Router>
-          <Routes>
-            <Route exact path="/" component={MainPage} />
-            <Route path="/login" component={Login} />
-          </Routes>
-        </Router>
-        </Header>
+        <Header/>
         <MainPage/>
         <Problema/>
         <Causa/>
         <Solucao/>
         <AboutUs/>
         <Contato/>
+        <Footer/>
     </div>
   );
 }
