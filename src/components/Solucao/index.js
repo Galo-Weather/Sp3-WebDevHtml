@@ -8,7 +8,6 @@ import { Element } from "react-scroll";
 
 const SolucaoContainer = styled.section`
     width: auto;
-    background: linear-gradient(#ffffff, #e8e8e8 15%);
     padding: 1em;
     h1{
         margin-top: 1em;
@@ -88,6 +87,7 @@ const Face2 = styled.div`
     padding: 1em;
     background: #fff;
     border-radius: 0 0 1em 1em;
+    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
     
     @media (min-width: 1100px) {
         height: 146px;

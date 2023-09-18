@@ -7,10 +7,11 @@ const Home = styled.section`
     margin: 0 auto;
 `
 const HomeContainer = styled.div`
-    align-items: center;
+    align-items: start;
     text-align: center;
 
     @media (min-width: 1100px) {
+        margin-top: 2em;
         padding: 2em 0 em 0;
         min-height: 100vh;
         display: grid;
@@ -43,6 +44,7 @@ const HomeTxt1 = styled.p`
         color: #0f62fe;
       }
     @media (min-width: 1100px) {
+        padding-top: 5em;
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -65,7 +67,7 @@ const HomeTxt2 = styled.p`
         flex-direction: column;
         max-width: 80%;
         padding: 2em;
-        text-align: start;
+        text-align: center;
         grid-column: 1;
         grid-row: 2;
     }
@@ -78,7 +80,8 @@ function MainPage() {
             <Home>
                 <HomeContainer>
                     <HomeTxt1>
-                        <p>Cidades Sustentáveis</p>
+                        <p>Cidades Sustentáveis:</p>
+                        <p>O desafio</p>
                     </HomeTxt1>
                     <HomeImg>
                         <img
@@ -87,10 +90,7 @@ function MainPage() {
                     </HomeImg>
                     <HomeTxt2>
                         <p>O Desafio da IBM:</p>
-                        <p>A IBM está comprometida em enfrentar o desafio de tornar as cidades mais sustentáveis, buscando
-                            soluções inovadoras que equilibrem o desenvolvimento econômico, social e ambiental. Em nosso
-                            projeto, direcionamos nosso foco para São Paulo, uma cidade que enfrenta um problema recorrente e
-                            urgente: os alagamentos em centros urbanos.</p>
+                        <p>A IBM está dedicada a enfrentar o desafio de tornar as cidades mais sustentáveis, buscando soluções inovadoras que equilibrem o desenvolvimento econômico, social e ambiental. Em nosso projeto, focamos em São Paulo, uma cidade que enfrenta o grave problema dos alagamentos urbanos. Nosso compromisso é contribuir com soluções eficazes para mitigar esses impactos, visando um ambiente mais seguro e habitável para as futuras gerações, alinhados com os Objetivos de Desenvolvimento Sustentável da ONU.</p>
                     </HomeTxt2>
                 </HomeContainer>
             </Home>
