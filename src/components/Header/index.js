@@ -148,7 +148,7 @@ function Header() {
                             spy={true}
                             offset={-50}
                             duration={500}>
-                            <a>Home</a>
+                            <a href="home">Home</a>
                             </ScrollLink>
                         </li>
                         <li>
@@ -184,7 +184,7 @@ function Header() {
                         <li>
                             <ScrollLink
                             activeClass="active"
-                            to="Contato"
+                            to="AboutUs"
                             spy={true}
                             offset={-50}
                             duration={500}>

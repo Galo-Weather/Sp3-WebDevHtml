@@ -4,7 +4,7 @@ import Problema from './components/Problema';
 import Causa from './components/Causa';
 import Solucao from './components/Solucao';
 import AboutUs from './components/AboutUs';
-// import Contato from './components/Contato';
+import Contato from './components/Contato';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Causa/>
       <Solucao/>
       {/* <AboutUs/> */}
-      {/* <Contato/> */}
+      <Contato/>
     </div>
   );
 }
