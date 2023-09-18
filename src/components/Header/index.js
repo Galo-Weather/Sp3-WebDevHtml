@@ -4,6 +4,7 @@ import hamburguer from '../../imgs/burguer.png'
 import logo from '../../imgs/galoBanner.png'
 import { useState } from "react";
 import { Link as ScrollLink, Element} from "react-scroll"
+import { Link } from "react-router-dom";
 
 const Head = styled.header`
     position: fixed;
@@ -205,8 +206,9 @@ function Header() {
                 </Nav>
                 <LoginHeader>
                     <UnderlineLogin></UnderlineLogin>
-                    <LoginAnchor id="loginNav" href="./login.html">Login</LoginAnchor>
+                    <Link to="/login">Login</Link>
                 </LoginHeader>
+
             </Head>
         </div>
     );
